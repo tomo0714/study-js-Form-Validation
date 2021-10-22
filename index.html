@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Form Validation</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Form Validation</h1>
+  <!-- form -->
+  <form action="form.php" method="post" onsubmit="return validation();">
+    <!-- text -->
+    <div id="textSection">
+      <p><label for="text">Text</label></p>
+      <p class="alert">Alert : Text</p>
+      <input type="text" id="text" name="text" value=""> 
+    </div>
+    <!-- radio -->
+    <div id="radioSection">
+      <p><label for="Radio">Radio</label></p>
+      <p class="alert">Alert : Radio</p>
+      <input type="radio" id="radio1" name="radio" value="Radio1">
+      <label for="radio1">Radio1</label>
+      <input type="radio" id="radio2" name="radio" value="Radio2">
+      <label for="Radio2">Radio2</label>
+      <input type="radio" id="radio3" name="radio" value="Radio3">
+      <label for="radio3">Radio3</label>
+      <input type="radio" id="radio4" name="radio" value="Radio4">
+      <label for="radio4">Radio4</label>
+    </div>
+    <!-- checkbox -->
+    <div id="checkboxSection">
+      <p><label for="Checkbox">Checkbox</label></p>
+      <p class="alert">Alert : Checkbox</p>
+      <input type="checkbox" id="checkbox1" name="checkbox" value="checkbox1">
+      <label for="checkbox1">Checkbox1</label>
+      <input type="checkbox" id="checkbox2" name="checkbox" value="checkbox2">
+      <label for="checkbox2">Checkbox2</label>
+      <input type="checkbox" id="checkbox3" name="checkbox" value="checkbox3">
+      <label for="checkbox3">Checkbox3</label>
+      <input type="checkbox" id="checkbox4" name="checkbox" value="checkbox4">
+      <label for="checkbox4">Checkbox4</label>
+      <input type="checkbox" id="checkbox5" name="checkbox" value="checkbox5">
+      <label for="checkbox5">Checkbox5</label>
+    </div>
+    <!-- select -->
+    <div id="selectSection">
+      <p><label for="Select">Select</label></p>
+      <p class="alert">Alert : Select</p>
+      <select name="select" id="select">
+        <option value="none">---</option>
+        <option value="select1">select1</option>
+        <option value="select2">select2</option>
+        <option value="select3">select3</option>
+        <option value="select4">select4</option>
+      </select>
+    </div>
+    <!-- textarea -->
+    <div id="textareaSection">
+      <p><label for="TextArea">TextArea</label></p>
+      <p class="alert">Alert : TextArea</p>
+      <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    </div>
+    <!-- submit -->
+    <input type="submit" value="Submit" id="submitBtn">
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
